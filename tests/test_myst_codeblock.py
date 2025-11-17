@@ -215,8 +215,3 @@ def test_sourcecode_directive():
 def test_code_cell_directive():
     sybil = Sybil([PythonCodeBlockParser()])
     check_path(sample_path('myst-code-cell.md'), sybil, expected=1)
-
-
-def test_code_cell_invisible():
-    sybil = Sybil([PythonCodeBlockParser()])
-    check_path(sample_path('myst-code-cell-invisible.md'), sybil, expected=4)

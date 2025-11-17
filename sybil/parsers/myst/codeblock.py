@@ -35,11 +35,11 @@ class CodeBlockParser(AbstractCodeBlockParser):
                     arguments='.+',
                 ),
                 DirectiveInPercentCommentLexer(
-                    directive=r'(invisible-)?code(-block|-cell)?',
+                    directive=r'(invisible-)?code(-block)?',
                     arguments='.+',
                 ),
                 DirectiveInHTMLCommentLexer(
-                    directive=r'(invisible-)?code(-block|-cell)?',
+                    directive=r'(invisible-)?code(-block)?',
                     arguments='.+',
                 ),
             ],
