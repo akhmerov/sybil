@@ -139,18 +139,17 @@ Code blocks
 
 The codeblock parsers extract examples from `fenced code blocks`__,
 MyST ``code-block`` :ref:`directives <syntax/directives>`, MyST ``code-cell`` 
-:ref:`directives <syntax/directives>` (used by `MyST-NB`__), and "invisible"
+:ref:`directives <syntax/directives>` (used by `mystmd`__), and "invisible"
 code blocks in both styles of Markdown mult-line comment.
 
 __ https://spec.commonmark.org/0.30/#fenced-code-blocks
-__ https://myst-nb.readthedocs.io/
+__ https://mystmd.org/
 
 Python
 ~~~~~~
 
 Python examples can be checked in either ``python`` `fenced code blocks`__,
-MyST ``code-block`` :ref:`directives <syntax/directives>`, or MyST ``code-cell``
-:ref:`directives <syntax/directives>` using the
+MyST ``code-block``, or MyST ``code-cell`` :ref:`directives <syntax/directives>` using the
 :class:`sybil.parsers.myst.PythonCodeBlockParser`.
 
 __ https://spec.commonmark.org/0.30/#fenced-code-blocks
@@ -177,10 +176,10 @@ These examples can be checked with the following configuration:
   from tests.helpers import check_path
   check_path('examples/myst/codeblock-python.md', sybil, expected=4)
 
-The ``code-cell`` directive, which is used by `MyST-NB`__ for Jupyter notebook integration,
+The ``code-cell`` directive, which is used by `mystmd`__ for Jupyter notebook integration,
 is also supported:
 
-__ https://myst-nb.readthedocs.io/
+__ https://mystmd.org/
 
 .. literalinclude:: examples/myst/codeblock-python-code-cell.md
   :language: markdown

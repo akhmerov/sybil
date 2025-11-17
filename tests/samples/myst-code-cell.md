@@ -1,5 +1,6 @@
-This is a code-cell block:
+This is a code-cell block with an extra flag:
 
 ```{code-cell} python
-    assert 1 + 1 == 2
+:hide-code:
+assert 1 + 1 == 2
 ```
