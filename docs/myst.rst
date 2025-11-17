@@ -156,7 +156,8 @@ MyST ``code-block`` :ref:`directives <syntax/directives>`, or MyST ``code-cell``
 __ https://spec.commonmark.org/0.30/#fenced-code-blocks
 
 Including all the boilerplate necessary for examples to successfully evaluate and be checked
-can hinder writing documentation. To help with this, "invisible" code blocks are also supported.
+can hinder writing documentation. To help with this, "invisible" code blocks are also supported,
+including invisible ``code-cell`` blocks.
 These take advantage of either style of Markdown block comments.
 
 For example:
